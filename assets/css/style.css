@@ -36,6 +36,9 @@ body {
   line-height: 2.4;
   padding: 60px 20px 40px;
   border-bottom: 4px solid hsl(45, 90%, 60%);
+  position: sticky;
+  top: 0;
+  z-index: 100; 
 }
 
 #site-header h1 {
@@ -185,6 +188,7 @@ h3 {
 .project {
   position: relative;
 }
+/* NEW attaccato in alto a destra */
 
 .project:first-of-type::after {
   content: "NEW";
@@ -334,7 +338,7 @@ button:hover {
   background-color: hsl(207, 97%, 38%);
 }
 
-/* Bottone new attaccato */
+
 
 
 
