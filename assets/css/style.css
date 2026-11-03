@@ -182,17 +182,20 @@ h3 {
   background-color: #ffffff;
 }
 
-.project:first-of-type h3::after {
-  content: "NEW";
-  display: inline-block;
-  padding: 2px 8px;
-  margin-left: 12px;
-  background-color: hsl(0, 70%, 50%);
-  color: #ffffff;
-  border-radius: 3px;
-  font-size: 0.75rem;
+.project {
+  position: relative;
 }
 
+.project:first-of-type::after {
+  content: "NEW";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 8px;
+  background-color: hsl(0, 70%, 50%);
+  color: #ffffff;
+  font-size: 0.75rem;
+}
 
 /* Form contatti riscritto per mobile di base */
 label {
@@ -331,7 +334,11 @@ button:hover {
   background-color: hsl(207, 97%, 38%);
 }
 
-/*Media Query */
+/* Bottone new attaccato */
+
+
+
+/* Media Query */
 
 /* TABLET (min-width: 768px)
    - Rimetto float per avatar
